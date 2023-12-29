@@ -1,6 +1,6 @@
 'use client'
 
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 import {generatorOBJ} from "@app/utils";
 
 export default function Home() {
@@ -55,7 +55,7 @@ export default function Home() {
                 localStorage.setItem('counter', JSON.stringify(newCounter));
                 return newCounter;
             });
-        }, 1000);
+        }, 5000);
         setIntervalID(id);
     }
 
