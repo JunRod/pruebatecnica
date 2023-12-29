@@ -29,6 +29,7 @@ export default function Home() {
             try {
                 const resp = await fetch(`https://back.apisunat.com/personas/v1/sendBill`, {
                     method: 'POST',
+                    cors: 'cors',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify(objFormatted)
                 })
