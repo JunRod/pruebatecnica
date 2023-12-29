@@ -17,8 +17,8 @@ export default function Home() {
             setCorrelativeCurrent(counter)
         } else {
             localStorage.setItem('counter', JSON.stringify(200));
-            setCounter(1);
-            setCorrelativeCurrent(1)
+            setCounter(200);
+            setCorrelativeCurrent(200)
         }
     }, []);
 
