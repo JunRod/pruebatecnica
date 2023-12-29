@@ -34,6 +34,7 @@ export default function Home() {
                     body: JSON.stringify(objFormatted)
                 })
                 const data = await resp.json();
+                console.log(data)
                 setDataResult([...dataResult, {status: data?.status}])
 
             } catch (error) {

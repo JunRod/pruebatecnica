@@ -6,7 +6,7 @@ export function generatorOBJ(counter) {
 
     return {
         "personaId": "658e0a4de6bd2d0014dbc12f",
-        "personaToken": "PRD_dDNa2wl4BqFPpRxGbxFlvzbNZOGc6AH2kmCtQg2iub01uJ99e1PPubznmXrC4bGh",
+        "personaToken": "DEV_w2laabfb7tv9jyygqjKsfUEqVSfuTAfjkxl6V2Cp3gA03wqecAJxqWdS2TFs9JR8",
         "fileName": `20552103816-03-B001-${generateCorrelative(counter)}`,
         "documentBody": {
             "cbc:UBLVersionID": {
