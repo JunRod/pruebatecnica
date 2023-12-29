@@ -28,11 +28,9 @@ export default function Home() {
             const objFormatted = generatorOBJ(counter);
             try {
                 const resp = await fetch(`https://back.apisunat.com/personas/v1/sendBill`, {
-                    next: {revalidate: 2000},
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify(objFormatted)
-
                 })
                 const data = await resp.json();
                 setDataResult([...dataResult, {status: data?.status}])
