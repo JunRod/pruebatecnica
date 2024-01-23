@@ -9,6 +9,7 @@ export default function Home() {
     const [startFetch, setStartFetch] = useState(false)
     const [correlativeCurrent, setCorrelativeCurrent] = useState()
     const [dataResult, setDataResult] = useState([])
+    console.log('')
 
     useEffect(() => {
         if (localStorage.getItem('counter')) {
